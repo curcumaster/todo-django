@@ -11,7 +11,7 @@ def index(request):
 def add(request):
     title = request.POST['title']
     todo = ToDo(title=title)
-    todo.dave()
+    todo.save()
     return redirect('index')
 
 def update(request, todo_id):

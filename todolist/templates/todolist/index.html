@@ -29,7 +29,7 @@
     <span class="ui green label">Завершено</span>
     <a class="ui blue button" href="{% url 'update' todo_id=todo.id %}">Открыть</a>
     {% endif %}
-    <a class="ui negative beaic button" href="{% url 'delete' todo_id=todo.id">Удвлить</a>
+    <a class="ui negative beaic button" href="{% url 'delete' todo_id=todo.id %}">Удвлить</a>
 </div>
 
 {% endfor %}
